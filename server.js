@@ -1,8 +1,8 @@
 //var http = require('http');
-const fs = require('fs');
-const content = fs.readFileSync('character/Megumin.jpg');
-const express = require('express');
-const server = express();
+const fs = require('fs'),
+  content = fs.readFileSync('character/Megumin.jpg'),
+  express = require('express'),
+  server = express();
 
 server.get('/', (req, res) => {
   res.send(`
